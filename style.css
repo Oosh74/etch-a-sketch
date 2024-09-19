@@ -9,7 +9,6 @@ body {
   display: flex;
   padding: 40px;
   background-color: orange;
-  height: 100vh;
   width: 100vw;
   align-items: center;
   justify-content: center;
@@ -17,7 +16,20 @@ body {
 
 .grid-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   height: 100%;
   flex: 1;
   background-color: purple;
+  gap: 2%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+}
+
+.gridChild {
+  flex: 0 1 calc(25% - 24px);
+  background-color: white;
+  margin-bottom: 24px;
+  aspect-ratio: 1/1;
 }
