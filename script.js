@@ -1,1 +1,3 @@
-console.log('Hello World');
+let gridContainer = document.querySelector('.grid-container');
+
+console.log(gridContainer);
