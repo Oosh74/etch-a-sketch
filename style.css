@@ -7,29 +7,25 @@
 html,
 body {
   display: flex;
-  padding: 40px;
   background-color: orange;
   width: 100vw;
+  height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
 .grid-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
-  flex: 1;
-  background-color: purple;
-  gap: 2%;
+  gap: 24px;
   justify-content: space-around;
-  align-items: center;
   padding: 24px;
+  background-color: purple;
+  flex: 0 1 40%;
 }
 
 .gridChild {
-  flex: 0 1 calc(25% - 24px);
+  flex: 1 1 calc(25% - 24px);
   background-color: white;
-  margin-bottom: 24px;
   aspect-ratio: 1/1;
 }
