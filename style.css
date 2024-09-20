@@ -9,23 +9,27 @@ body {
   display: flex;
   background-color: orange;
   width: 100vw;
-  height: 100vh;
+  height: atuo;
   align-items: center;
   justify-content: center;
+  padding: 40px;
 }
 
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  justify-content: space-around;
   padding: 24px;
   background-color: purple;
-  flex: 0 1 40%;
+  flex-basis: 100%;
+  height: auto;
 }
 
 .gridChild {
-  flex: 1 1 calc(25% - 24px);
+  flex-basis: 6.25%;
   background-color: white;
   aspect-ratio: 1/1;
+}
+
+.gridChild:hover {
+  background-color: pink;
 }
