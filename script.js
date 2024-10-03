@@ -1,10 +1,14 @@
 const gridContainer = document.querySelector('.grid-container');
 const changeGridBtn = document.querySelector('.change-grid-btn');
 
-const drawGrid = () => {
-  for (let i = 0; i < 256; i++) {
+const drawGrid = (grid = 16) => {
+  gridContainer.replaceChildren();
+
+  for (let i = 0; i < grid * grid; i++) {
     const gridChild = document.createElement('div');
     gridChild.className = 'gridChild';
+    gridChild.style.width = `${(960 - 48) / grid}px`;
+    gridChild.style.height = `${(960 - 49) / grid}px`;
     gridContainer.appendChild(gridChild);
     console.log(i);
   }
@@ -12,13 +16,13 @@ const drawGrid = () => {
 
 changeGridBtn.addEventListener('click', () => {
   let gridNumber = prompt(
-    'How large should the grid be (must be 100x100 or smaller)?'
+    'How large should the grid be (must be 64x64 or smaller)?'
   );
 
-  while (gridNumber > 100 || isNaN(gridNumber)) {
-    if (gridNumber > 100) {
+  while (gridNumber > 64 || isNaN(gridNumber)) {
+    if (gridNumber > 64) {
       gridNumber = prompt(
-        'The grid cannot be larger than 100x100, please input a smaller number'
+        'The grid cannot be larger than 64x64, please input a smaller number'
       );
     } else if (isNaN(gridNumber)) {
       gridNumber = prompt(
@@ -29,7 +33,7 @@ changeGridBtn.addEventListener('click', () => {
     }
   }
 
-  return console.log('gridNumber', gridNumber);
+  return drawGrid(gridNumber);
 });
 
-drawGrid();
+// drawGrid();

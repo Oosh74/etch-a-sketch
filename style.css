@@ -21,7 +21,11 @@ body {
 }
 
 .btn-container {
+  display: flex;
   margin-bottom: 54px;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .change-grid-btn {
@@ -38,14 +42,13 @@ body {
   flex-wrap: wrap;
   padding: 24px;
   background-color: purple;
-  flex-basis: 100%;
-  height: auto;
+  flex-basis: 960px;
+  height: 960px;
 }
 
 .gridChild {
-  flex-basis: 6.25%;
   background-color: white;
-  aspect-ratio: 1/1;
+  border: 1px solid black;
 }
 
 .gridChild:hover {
