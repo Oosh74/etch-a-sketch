@@ -4,15 +4,33 @@
   padding: 0;
 }
 
+button {
+  all: unset;
+}
+
 html,
 body {
   display: flex;
+  flex-wrap: wrap;
   background-color: orange;
   width: 100vw;
-  height: atuo;
+  height: auto;
   align-items: center;
   justify-content: center;
   padding: 40px;
+}
+
+.btn-container {
+  margin-bottom: 54px;
+}
+
+.change-grid-btn {
+  background-color: white;
+  padding: 16px 32px;
+}
+
+.change-grid-btn:hover {
+  background-color: rgb(241, 241, 241);
 }
 
 .grid-container {
