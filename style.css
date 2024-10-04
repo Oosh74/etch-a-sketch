@@ -41,16 +41,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 24px;
-  background-color: purple;
+  background-color: white;
   flex-basis: 960px;
   height: 960px;
 }
 
 .gridChild {
-  background-color: white;
+  background-color: rgb(234, 234, 234);
   border: 1px solid black;
 }
 
-.gridChild:hover {
+/* .change-background {
   background-color: pink;
-}
+} */

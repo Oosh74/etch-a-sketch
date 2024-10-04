@@ -36,4 +36,25 @@ changeGridBtn.addEventListener('click', () => {
   return drawGrid(gridNumber);
 });
 
-// drawGrid();
+const getRandomNumber = () => {
+  return Math.floor(Math.random() * 251);
+};
+
+gridContainer.addEventListener('mouseover', (e) => {
+  if (
+    e.target.classList.contains('gridChild') &&
+    !e.target.classList.contains('change-background')
+  ) {
+    e.target.classList.add('change-background');
+    e.target.style.backgroundColor = `rgb(${getRandomNumber()},${getRandomNumber()},${getRandomNumber()})`;
+    e.target.style.opacity = '10%';
+  } else if (
+    e.target.classList.contains('change-background') &&
+    e.target.style.opacity !== '1'
+  ) {
+    let currentOpacity = Number(e.target.style.opacity);
+    console.log(currentOpacity);
+    let newOpacity = (currentOpacity += 0.1);
+    e.target.style.opacity = `${newOpacity}`;
+  }
+});
