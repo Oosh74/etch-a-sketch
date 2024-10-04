@@ -10,7 +10,6 @@ const drawGrid = (grid = 16) => {
     gridChild.style.width = `${(960 - 48) / grid}px`;
     gridChild.style.height = `${(960 - 49) / grid}px`;
     gridContainer.appendChild(gridChild);
-    console.log(i);
   }
 };
 

@@ -51,6 +51,13 @@ body {
   border: 1px solid black;
 }
 
-/* .change-background {
-  background-color: pink;
-} */
+h1 {
+  margin-bottom: 40px;
+  flex-basis: 100%;
+}
+
+footer {
+  margin-top: 40px;
+  flex-basis: 100%;
+  text-align: center;
+}
