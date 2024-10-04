@@ -12,7 +12,7 @@ html,
 body {
   display: flex;
   flex-wrap: wrap;
-  background-color: orange;
+  background-color: #f0f0f0;
   width: 100vw;
   height: auto;
   align-items: center;
@@ -29,25 +29,25 @@ body {
 }
 
 .change-grid-btn {
-  background-color: white;
+  background-color: #ffb74d;
   padding: 16px 32px;
 }
 
 .change-grid-btn:hover {
-  background-color: rgb(241, 241, 241);
+  background-color: #fb8c00;
 }
 
 .grid-container {
   display: flex;
   flex-wrap: wrap;
   padding: 24px;
-  background-color: white;
+  background-color: #b2ebf2;
   flex-basis: 960px;
   height: 960px;
 }
 
 .gridChild {
-  background-color: rgb(234, 234, 234);
+  background-color: #ffffff;
   border: 1px solid black;
 }
 
